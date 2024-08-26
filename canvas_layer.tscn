@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cveiiueith5v0"]
+
+[node name="Parabens(real)" type="CanvasLayer"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 209.0
+offset_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="ganhou(real)" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Parabéns você não pulou num poço sem saída!!!
+🎆🎆🎆🎆🎆🎆🎆🎆🎆🎇🎇🎇🎇🎇🎇🎇🎇🎇🎇
+(😱😱final real?? 😱😱)
+🎇✨✨✨✨🎉🎉🎉🎉🎉🎉🎉🎉🎊🎊🎊🎊🎊🎊🎊🎊
+"
+
+[connection signal="pressed" from="VBoxContainer/ganhou(real)" to="." method="_on_ganhoureal_pressed"]

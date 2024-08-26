@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://85qomoobfbwc"]
+
+[ext_resource type="Script" path="res://game_over_menu.gd" id="1_yldtc"]
+[ext_resource type="Texture2D" uid="uid://crgl8bfoa4qdl" path="res://Assets_aula1/botoes/Restart.png" id="2_ngnwj"]
+[ext_resource type="Texture2D" uid="uid://du4d7vinp10u6" path="res://Assets_aula1/botoes/Close.png" id="3_u7hx7"]
+
+[node name="GameOverMenu" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_yldtc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.623529)
+
+[node name="Restart" type="Sprite2D" parent="."]
+position = Vector2(253, 300)
+rotation = -1.56572
+scale = Vector2(3.01607, 3.76719)
+texture = ExtResource("2_ngnwj")
+
+[node name="Close" type="Sprite2D" parent="."]
+position = Vector2(414, 307)
+scale = Vector2(6.3875, 4.5)
+texture = ExtResource("3_u7hx7")

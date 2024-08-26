@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://7xhbnt3unf4o"]
+
+[ext_resource type="Script" path="res://pause_menu.gd" id="1_phdyg"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+script = ExtResource("1_phdyg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+text = "Quit
+"
+
+[node name="voltar" type="Button" parent="VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+text = "Voltar
+"
+
+[node name="reiniciar" type="Button" parent="VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+text = "Reiniciar"
+
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="VBoxContainer/reiniciar" to="." method="_on_reiniciar_pressed"]
